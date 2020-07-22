@@ -1,0 +1,47 @@
+<a href="login.php">Login</a>
+<form name="student_reg" method="POST" action="" onsubmit="return validateForm()">
+        <p>NAME:</p>
+        <input type="text" id="name" >
+        <span class="error"><p id="name_error"></p></span
+
+        <p>EMAIL:</p>
+        <input type="text" name="email" value="" >
+        <span class="error"><p id="email_error"></p></span
+
+        <p>USERNAME:</p>
+        <input type="text" name="username" value="" >
+        <span class="error"><p id="username_error"></p></span
+
+        <p>PASSWORD:</p>
+        <input type="password" name="password" value="" >
+        <span class="error"><p id="password_error"></p></span
+
+        <p>ROLL NO:</p>
+        <input type="number" name="roll_no" value="" >
+        <span class="error"><p id="roll_no_error"></p></span
+        <br/>
+        <br/>
+        <br/>
+
+        <input type="submit" name="submit" value="submit">
+
+</form>
+<script>
+function validateForm() {
+        var error = 0;
+        var a = document.getElementById("name").value;
+        document.getElementById('name_error').innerHTML = '';
+        if (a == null || a == "") {
+            // alert("Name must be filled out");
+            error++;
+            document.getElementById('name_error').innerHTML = 'Name must be filled out';
+        }
+        if(error>0) {
+        return false;
+        }
+        return true;
+}
+
+</script>
+</body>
+</html>
