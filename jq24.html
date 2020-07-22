@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Tabs - Default functionality</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="./resources/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            $("#tabs").tabs();
+        });
+    </script>
+</head>
+<body>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Italian</a></li>
+            <li><a href="#tabs-2">Chinese</a></li>
+            <li><a href="#tabs-3">Mexican</a></li>
+            <li><a href="#tabs-4">Continental</a></li>
+        </ul>
+        <div id="tabs-1">
+		<p>Menu:</p>
+            <ol>
+                <li>Pizza</li>
+                <li>Pasta</li>
+                <li>Risotto</li>
+            </ol>
+        </div>
+        <div id="tabs-2">
+		<p>Menu:</p>
+            <ol>
+                <li>Noodles</li>
+                <li>Soups</li>
+                <li>Fried Rice</li>
+            </ol>
+        </div>
+        <div id="tabs-3">
+		<p>Menu:</p>
+            <ol>
+                <li>Nachos</li>
+                <li>Tacos</li>
+                <li>Enchiladas</li>
+            </ol>
+        </div>
+        <div id="tabs-4">
+		<p>Menu:</p>
+            <ol>
+                <li>Caesar Salad</li>
+                <li>Grilled Chicken with Piri Piri Sauce</li>
+                <li>Citrus Lemon Tart</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
